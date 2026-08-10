@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+html, body { overscroll-behavior-y: none;  font-family: sans-serif; } 
+button { cursor: pointer; }
+body[data-view="lg"] { 
+	display: grid; 
+	grid-template-columns: auto auto; 
+	align-items: center; 
+	column-gap: 2rem; 
+}
+main {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	scrollbar-width: none;
+	min-width: 315px;
+	justify-self: end;
+}
+main/* [data-view="sm"] */ > section {
+	height: 100vh;
+	width: 100%;
+	max-width: 652px;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	scroll-behavior: smooth;
+	position: relative;
+	margin: 0 auto;
+	aspect-ratio: 0.5625;
+}
+body[data-view="lg"] > main > section {
+	overflow: hidden;
+	padding: 46px 0;
+}
+main/* [data-view="sm"] */ > section > video {
+	width: 100%; 
+	height: 100%;
+	object-fit: cover;
+}
+body[data-view="lg"] > main > section > video {
+	border-radius: 16px;
+}
+aside {
+	text-align: center;
+	font-size: 0.8rem;
+	width: 32px;
+	position: absolute;
+	bottom: 24px;
+	right: 16px;
+	color: white;
+}
+[data-view="lg"] > aside {
+	position: relative;
+	color: rgba(22, 24, 35, 0.75);
+}
+aside > button {
+	background-color: #f4f4f4;
+	border: none;
+	width: 32px;
+	height: 32px;
+	margin: 10px 0 5px;
+	border-radius: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+aside > button:hover {
+	background-color: #dadada;
+}
+aside > button > svg {
+	width: 16px;
+}
+@media (max-width: 640px) {
+	body[data-view="lg"] > main {
+		justify-self: unset;
+	}
+	body[data-view="lg"] {
+		display: block;
+	}	
+	body[data-view="lg"] > main > section > video {
+		border-radius: 0;
+	}
+	body[data-view="lg"] > main > section {
+		padding: 0;
+	}	
+	body[data-view="lg"] > aside {
+		position: absolute;
+		color: white;
+	}
+}
