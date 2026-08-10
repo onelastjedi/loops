@@ -20,6 +20,11 @@ No third-party libraries were used.
 ├── .gitignore	# Untracked files
 ```
 
+## Dependencies
+
+[ffmpeg](https://github.com/ffmpeg/ffmpeg), [cwebp](https://developers.google.com/speed/webp/download), [minify](https://github.com/tdewolff/minify/releases)
+Download and install according to your OS.
+
 ## Development
 
 Clone the repository and put the videos from the link into the `vid` directory.
@@ -27,7 +32,7 @@ Then run `make dev`.
 
 ## Build
 
-Run `make build`. This will get all files into `dist`. You can then serve
+Run `make prepare; make jpg; make build`. This will get all files into `dist`. You can then serve
 those files using a static web server such as Nginx.
 
 ## License
