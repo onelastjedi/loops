@@ -87,11 +87,11 @@ copy:
 clean:
 	rm -rf ./dist
 	rm -rf ./img
-	rm -rf ./vid
 	
 makedir:
 	mkdir img
-	mkdir vid
 	mkdir dist
+
+prepare: clean makedir
 	
-build: clean makedir copy minify-css minify-js inline-css inline-js minify-html
+build: webp copy minify-css minify-js inline-css inline-js minify-html
