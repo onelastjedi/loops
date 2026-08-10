@@ -2,7 +2,6 @@
 
 A short-video viewing interface with vertical scrolling, similar to TikTok / Instagram Reels,
 with support for mobile and desktop. No third-party libraries were used.
-
 ### Structure
 ```
 ├── api			# Pseudo API mocks
@@ -25,7 +24,7 @@ Download and install according to your OS.
 
 ## Development
 
-Clone the repository and put the videos from the link into the `vid` directory. Number videos from 0 to 10.
+Clone the repository and put the videos from the [link](https://drive.google.com/drive/folders/1L5lsFtOUSaIFt0nzQgo7fbAezBc0nBh-?usp=sharing) into the `vid` directory. Number videos from 0 to 10.
 Then run `make dev`.
 
 ## Build
@@ -34,6 +33,4 @@ Run `make prepare; make jpg; make build`. This will get all files into `dist`. Y
 those files using a static web server such as Nginx.
 
 ## License
-[WTFPL](LICENSE)
-
-<img src="https://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png">
+<a href="LICENSE"><img src="https://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png"></a>
