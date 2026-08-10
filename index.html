@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>Watch trending videos for you | Loops</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Loops — trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos.">
+	<meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+	<link rel="stylesheet" href="index.css">
+</head><body>
+<main id="$app" data-playing="1" data-muted="1">
+	<section data-id="0"><video src="vid/0.mp4" poster="img/0.webp" preload="auto" autoplay loop muted playsinline></video></section>
+	<section data-id="1"><video src="vid/1.mp4" poster="img/1.webp" preload="auto" autoplay loop muted playsinline></video></section>
+	<section data-id="2"><video src="vid/2.mp4" poster="img/2.webp" preload="auto" autoplay loop muted playsinline></video></section>
+</main>
+<aside>
+	<button id="$toggle_mute" aria-label="mute"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+			<path d="M3 19v11.17a3 3 0 0 0 3 3h4.2a2 2 0 0 1 1.46.63l8.88 9.5A2 2 0 0 0 24 41.93V6.4a2 2 0 0 0-3.51-1.3L11.67 15.3a2 2 0 0 1-1.52.7H6a3 3 0 0 0-3 3ZM29.3 18.12 35.16 24l-5.88 5.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0L38 26.83l5.88 5.88a1 1 0 0 0 1.41 0l1.42-1.42a1 1 0 0 0 0-1.41L40.83 24l5.88-5.88a1 1 0 0 0 0-1.41l-1.42-1.42a1 1 0 0 0-1.41 0L38 21.17l-5.88-5.88a1 1 0 0 0-1.41 0l-1.42 1.42a1 1 0 0 0 0 1.41Z">
+			</path>
+		</svg></button><span id="$sound">off</span>
+	<button aria-label="like"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+			<path d="M24 9.44c3.2-4.03 7.61-5.56 12-4.67 2.31.47 5.59 2.28 7.75 5.48 2.26 3.32 3.21 7.99.98 13.85-1.75 4.57-5.5 8.83-9.28 12.2a56.6 56.6 0 0 1-10.52 7.47l-.93.49-.93-.49a56.6 56.6 0 0 1-10.52-7.47c-3.78-3.37-7.53-7.63-9.28-12.2-2.24-5.86-1.28-10.53.98-13.85C6.4 7.05 9.69 5.24 12 4.77c4.39-.9 8.8.64 12 4.67Z">
+			</path>
+		</svg></button><span id="$likes">4720</span>
+	<button aria-label="message"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M2 21.5c0-10.22 9.88-18 22-18s22 7.78 22 18c0 5.63-3.19 10.74-7.32 14.8a43.55 43.55 0 0 1-14.14 9.1A1.5 1.5 0 0 1 22.5 44v-5.04C11.13 38.4 2 31.34 2 21.5ZM14 25a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm13-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z">
+			</path>
+		</svg></button><span id="$msgs">53</span>
+	<button aria-label="save"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+			<path d="M13 4a5 5 0 0 0-5 5v32.8a2 2 0 0 0 3.26 1.55l12.1-9.84a1 1 0 0 1 1.27 0l12.1 9.84A2 2 0 0 0 40 41.8V9a5 5 0 0 0-5-5H13Z">
+			</path>
+		</svg></button><span id="$saves">302</span><button aria-label="share">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M23.82 3.5A2 2 0 0 0 20.5 5v10.06C8.7 15.96 1 25.32 1 37a2 2 0 0 0 3.41 1.41c4.14-4.13 10.4-5.6 16.09-5.88v9.97a2 2 0 0 0 3.3 1.52l21.5-18.5a2 2 0 0 0 .02-3.02z"></path></svg></button>
+	<span id="$shares">122</span>
+</aside>
+<script>(navigator && (document.body.dataset.view = navigator?.userAgent.includes('Mobile') ? 'sm' : 'lg'));</script>
+<script src="index.js"></script>
+</body></html>
