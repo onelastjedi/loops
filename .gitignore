@@ -8,3 +8,6 @@
 *.njsproj
 *.sln
 *.sw?
+
+vid/*.mp4
+img/*.*
