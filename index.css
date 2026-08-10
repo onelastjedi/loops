@@ -62,7 +62,6 @@ aside > button {
 	align-items: center;
 	justify-items: center;
 }
-
 aside > button:hover {
 	background-color: #dadada;
 }
