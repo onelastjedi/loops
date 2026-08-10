@@ -35,3 +35,5 @@ those files using a static web server such as Nginx.
 
 ## License
 [WTFPL](LICENSE)
+
+<img src="https://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png">
