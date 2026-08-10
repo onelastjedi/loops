@@ -1,9 +1,7 @@
 # Vertical video sliding UI
 
 A short-video viewing interface with vertical scrolling, similar to TikTok / Instagram Reels,
-with support for mobile and desktop.
-
-No third-party libraries were used.
+with support for mobile and desktop. No third-party libraries were used.
 
 ### Structure
 ```
@@ -22,12 +20,12 @@ No third-party libraries were used.
 
 ## Dependencies
 
-[ffmpeg](https://github.com/ffmpeg/ffmpeg), [cwebp](https://developers.google.com/speed/webp/download), [minify](https://github.com/tdewolff/minify/releases)
+[ffmpeg](https://github.com/ffmpeg/ffmpeg), [cwebp](https://developers.google.com/speed/webp/download), [minify](https://github.com/tdewolff/minify/releases).
 Download and install according to your OS.
 
 ## Development
 
-Clone the repository and put the videos from the link into the `vid` directory.
+Clone the repository and put the videos from the link into the `vid` directory. Number videos from 0 to 10.
 Then run `make dev`.
 
 ## Build
