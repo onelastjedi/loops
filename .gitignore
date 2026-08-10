@@ -9,6 +9,5 @@
 *.sln
 *.sw?
 
-vid/*.*
-img/*.*
+img/
 dist/
