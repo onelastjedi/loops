@@ -42,7 +42,7 @@ webm:
 
 webp:
 	@for f in $(IMAGES); do \
-		cwebp "$$f" -q 30 -o "$${f/%.jpg/.webp}" \
+		cwebp "$$f" -q 30 -o "$${f%.jpg}.webp"; \
 		echo "$$f"; \
 		rm -f $$f; \
 	done
