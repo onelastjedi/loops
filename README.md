@@ -1,4 +1,4 @@
-# Vertical video sliding UI
+# Loops: vertical video sliding UI
 
 A short-video viewing interface with vertical scrolling, similar to TikTok / Instagram Reels,
 with support for mobile and desktop. No third-party libraries were used.
