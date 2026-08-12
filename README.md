@@ -5,11 +5,11 @@ with support for mobile and desktop. No third-party libraries were used.
 ### Structure
 ```
 ├── api			# Pseudo API mocks
-├── bin			# Binary dependencies
 ├── favicon.ico	# Simple favicon
 ├── img			# Images directory
 ├── index.css	# Stylesheet
 ├── index.html	# Markup
+├── index.js	# Script
 ├── Makefile	# Build
 ├── LICENSE		# License
 ├── README.md	# This readme
